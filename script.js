@@ -20,4 +20,20 @@ function update_chrono() {
         s =0;
         mn+=1
     }
+    if (mn=60) {
+        mn=0;
+        h+=1;
+    }
+    // Insertion des valeurs dans les spans
+    // [0] permet de selectionner la premier span
+    //   [1]     Le 2eme span etc..
+    sp[0].innerHTML = h + "h";
+    sp[1].innerHTML = mn + "min";
+    sp[2].innerHTML = s + "s";
+    sp[3].innerHTML = ms = "ms";
+}
+
+//  mettre en place la fonction du button start
+function start () {
+    t =se
 }
