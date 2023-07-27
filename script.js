@@ -39,8 +39,20 @@ function start() {
     btn_start.disabled = true;
 }
 
-// fonction pour arrêter le chronomètre
+//  stopper le chronometre 
 function stop() {
+    clearInterval(t); //suppression de l'interval t que nous avions créer 
+    btn_start.disabled = false;
+}
+
+// initialiser les valeurs du compteur 
+function reset() {
     clearInterval(t);
     btn_start.disabled = false;
+    ms =0, s =0, mn =0, h =0;
+    // inserer des nouvelles valeurs dans les spans
+    sp[0].innerHTML = h + "h";
+    sp[1].innerHTML = mn + "min";
+    sp[2].innerHTML = s + "s";
+    sp[3].innerHTML = ms + "ms";
 }
