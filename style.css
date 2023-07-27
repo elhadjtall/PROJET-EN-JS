@@ -6,9 +6,10 @@
 }
 Body {
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
     min-height: 100vh;
+    text-align: center;
     background-color: #0ef;
 }
 .chronometre {
@@ -32,5 +33,9 @@ Body {
 .time span {
     font-family: 'Times New Roman', Times, serif;
     padding: 5px;
-
+}
+.controls {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
