@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Chronomètre</title>
+    <title>Chronometre</title>
 </head>
 <body>
-    <div class="chronometre">
-        <div class="time">
-            <span>O h</span>
-            <span>O min</span>
-            <span>O s</span>
-            <span>O ms</span>
-        </div>
-        <div class="controls">
-            <button id="start" onclick="start()">Start</button>
-            <button id="stop" onclick="stop()">Stop</button>
-            <button id="reset" onclick="reset()">Reset</button>
-        </div>
+    <div class="container">
+        <div class="chronometre">
+            <div class="time">
+                <span id="hour">00</span>
+                <span id="minute">00</span>
+                <span id="second">00</span>
+                <span id="milisecond">00</span>
+            </div>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
